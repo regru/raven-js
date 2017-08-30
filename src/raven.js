@@ -1215,7 +1215,7 @@ Raven.prototype = {
         }
 
         if (dsn.pass && !this._globalOptions.allowSecretKey) {
-            throw new RavenConfigError('Do not specify your secret key in the DSN. See: http://bit.ly/raven-secret-key');
+            throw new RavenConfigError('Do not specify your secret key in the DSN. See: https://docs.sentry.io/clients/javascript/config/#optional-settings');
         }
 
         return dsn;
