@@ -1,4 +1,4 @@
-/*! Raven.js 3.17.0 (6384830) | github.com/getsentry/raven-js */
+/*! Raven.js 3.17.0 (e8c4c9c) | github.com/getsentry/raven-js */
 
 /*
  * Includes TraceKit
@@ -1280,7 +1280,7 @@ Raven.prototype = {
         }
 
         if (dsn.pass && !this._globalOptions.allowSecretKey) {
-            throw new RavenConfigError('Do not specify your secret key in the DSN. See: http://bit.ly/raven-secret-key');
+            throw new RavenConfigError('Do not specify your secret key in the DSN. See: https://docs.sentry.io/clients/javascript/config/#optional-settings');
         }
 
         return dsn;
